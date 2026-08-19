@@ -1,0 +1,20 @@
+import { useParams } from 'react-router-dom';
+import users from '../data/users';
+
+const UserDetail = () => {
+    const { id } = useParams();
+    const user = users[id];
+
+    if (!user) {
+        return <h2>User not found</h2>;
+    }
+
+    return (
+        <div>
+            <p> {user.firstName} {user.lastName} : {user.age} </p>
+
+        </div>
+    );
+};
+
+export default UserDetail;
