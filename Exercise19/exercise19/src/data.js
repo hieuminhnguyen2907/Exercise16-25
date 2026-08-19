@@ -1,0 +1,31 @@
+export default [
+  {
+    name: "Lion",
+    scientificName: "Panthero leo",
+    size: 140,
+    diet: ["meat"],
+    image: "/images/image1.png",
+  },
+  {
+    name: "Gorilla",
+    scientificName: "Gorilla beringei",
+    size: 205,
+    diet: ["plants", "insects"],
+    image: "/images/image2.png",
+    additional: {
+      notes:
+        "This is the eastern gorilla. There is also a western gorilla that is a different species.",
+    },
+  },
+  {
+    name: "Zebra",
+    scientificName: "Equus quagga",
+    size: 322,
+    diet: ["plants"],
+    image: "/images/image3.png",
+    additional: {
+      notes: "There are three different species of zebra.",
+      link: "https://en.wikipedia.org/wiki/Zebra",
+    },
+  },
+];
